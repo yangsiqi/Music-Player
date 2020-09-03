@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html, body {
+    margin:0px;
+    height:100%;
+}
+.photo{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to bottom, #f094e8, #db9aef, #c59ff2, #b0a3f2, #9ca6ef, #8a9adf, #788dce, #6681be, #4f65a0, #384b84, #213268, #061b4d);
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: large;
+    color: black; 
+}
+.title{
+    width:100%;
+    height:50px;
+    font-size:35px;
+    text-align: center;
+    margin:auto;
+    line-height: 200px;
+}
+
+.singer{
+    width: 100%;
+    height:50px;
+    font-size:18px;
+    text-align:center;
+    margin:100px auto 30px auto;
+    line-height: 50px;
+}
+
+
+.image{
+    width:125px;
+    height:125px;
+    background-image:url("./data/music\ note.png");
+    background-repeat: no-repeat;
+    margin:50px 50px auto 120px;
+    float:left;
+}
+
+.lyric{
+    width: 800px;
+    height:400px;
+    margin:10px 80px auto 30px;
+    background-color: white;
+    text-align: center;
+    opacity: 0.3;
+    overflow:auto;
+    float:right;
+}
+
+.lyric p{
+    line-height: 30px;
+    font-size:15px;
+    
+}
+
+.content{
+    position:relative;
+
+}
+
+.songTime{
+    position: absolute;
+    font-size: 15px;
+    width: 100px;
+    height:40px;
+    text-align: center;
+    margin:230px 80px auto 120px;
+}
+.progressBar{
+    position: absolute;
+    width:300px;
+    height:2px;
+    background-color:pink;
+    margin:300px 50px auto 50px;
+}
+.nowTime{
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    background-color: salmon;
+    transition: all .3s;
+    margin:300px 50px auto 50px;
+}
+
+
+
+.image.rotate{
+    -webkit-animation: rot 5s linear infinite;
+    animation: rot 5s linear infinite;
+}
+
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
